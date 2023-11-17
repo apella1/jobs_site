@@ -1,7 +1,9 @@
+import { Box } from "@mui/material";
+
 export default function Home() {
   return (
-    <main className="">
+    <Box sx={{p: 2}} component="section">
       <p>Placement Platform</p>
-    </main>
+    </Box>
   )
 }
