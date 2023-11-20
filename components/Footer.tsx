@@ -36,7 +36,7 @@ export default function Footer() {
         divider={<Divider orientation="vertical" flexItem />}
       >
         {footerItems.map((item, index) => (
-          <Link key={index} href={item.link}>
+          <Link key={index} href={item.link} className="text-blue-500">
             {item.title}
           </Link>
         ))}
