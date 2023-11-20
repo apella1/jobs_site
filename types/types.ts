@@ -3,3 +3,9 @@ export type NavLink = {
   title: string;
   options?: string[];
 };
+
+export type ExperienceLevel = {
+  title: string;
+  jobs: number;
+  link: string;
+};
