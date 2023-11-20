@@ -36,7 +36,7 @@ export default function ExploreJobs() {
     (_, i) => jobFunctions.slice(i * 10, i * 10 + 10)
   );
   return (
-    <Stack spacing={8} className="py-8">
+    <Stack spacing={8} className="py-8 px-32">
       <Typography variant="h4" component="h3" className="self-center">
         Explore Jobs in Kenya by job Function
       </Typography>

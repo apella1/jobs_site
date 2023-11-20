@@ -19,7 +19,7 @@ const experienceLevels: ExperienceLevel[] = [
 
 export default function ExperienceFilter() {
   return (
-    <Stack className="py-8">
+    <Stack className="py-8 px-32">
       <Typography variant="h4" component="h3" className="self-center">
         Find the right job vacancies in Kenya
       </Typography>

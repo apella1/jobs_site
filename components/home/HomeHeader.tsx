@@ -23,7 +23,7 @@ const popularSearches = [
 ];
 export default function HomeHeader() {
   return (
-    <Stack className="py-8" spacing={4}>
+    <Stack className="py-16 px-32 bg-[#6013AB] text-white" spacing={4}>
       <Box className="self-center">
         <Typography variant="h2">Explore and discover</Typography>
         <Typography variant="h2">the right job for you</Typography>

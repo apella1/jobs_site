@@ -5,7 +5,7 @@ import img from "@/public/images/photo.jpg";
 
 export default function CompaniesHiring() {
   return (
-    <Stack spacing={5} className="py-8">
+    <Stack spacing={5} className="py-8 px-32">
       <Typography variant="h4" className="self-center">
         Companies Currently Hiring
       </Typography>

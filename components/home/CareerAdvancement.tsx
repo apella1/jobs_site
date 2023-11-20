@@ -13,7 +13,7 @@ export default function CareerAdvancement() {
     <Stack
       direction="row"
       spacing={4}
-      className="bg-[#111827] p-8 text-white rounded-[15px]"
+      className="bg-[#111827] py-16 px-32 text-white"
     >
       <Stack spacing={4} className="basis-1/2">
         <Typography variant="h5" className="text-white">

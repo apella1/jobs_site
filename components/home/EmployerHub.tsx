@@ -8,7 +8,7 @@ export default function EmployerHub() {
     <Stack
       direction="row"
       justifyContent="space-between"
-      className="bg-blue-300 rounded-[25px] p-8 my-8"
+      className="bg-[#380A8E] text-white rounded-[25px] mx-32 p-8 my-8"
     >
       <Stack spacing={4}>
         <Typography variant="h5" className="uppercase">
@@ -19,7 +19,10 @@ export default function EmployerHub() {
           We have more than 2.8 million job-seekers across all levels, right for
           your organization!
         </Typography>
-        <Link href="/employer" className="bg-white px-5 py-1 text-blue-600 rounded-[8px] w-fit">
+        <Link
+          href="/employer"
+          className="bg-white px-5 py-1 text-blue-600 rounded-[8px] w-fit"
+        >
           Learn More
         </Link>
       </Stack>
