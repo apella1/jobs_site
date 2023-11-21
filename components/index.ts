@@ -7,6 +7,5 @@ export { default as EmployerHub } from "./home/EmployerHub";
 export { default as CareerAdvancement } from "./home/CareerAdvancement";
 export { default as CompaniesHiring } from "./home/CompaniesHiring";
 export { default as CvReview } from "./home/CvReview";
-export { default as InputField } from "./InputField";
 export { default as LogoButton } from "./LogoButton";
 export { default as MainButton } from "./MainButton";
