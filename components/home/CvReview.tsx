@@ -13,7 +13,7 @@ export default function CvReview() {
             Collaborate with a professional cv writer to highlight your skills
             and achievements like never before.
           </Typography>
-          <Button variant="contained">Upgrade My CV</Button>
+          <Button variant="contained" className="w-fit">Upgrade My CV</Button>
         </Stack>
       </Stack>
     </Container>
