@@ -28,7 +28,7 @@ export default function Footer() {
     <Box
       component="section"
       sx={{ p: 2 }}
-      className="py-8 px-32 flex flex-col space-y-6"
+      className="py-8 px-32 flex flex-col space-y-6 mt-4"
     >
       <Stack
         direction="row"

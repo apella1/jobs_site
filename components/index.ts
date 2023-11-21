@@ -9,3 +9,4 @@ export { default as CompaniesHiring } from "./home/CompaniesHiring";
 export { default as CvReview } from "./home/CvReview";
 export { default as LogoButton } from "./LogoButton";
 export { default as MainButton } from "./MainButton";
+export { default as DatePickerComponent } from "./DatePicker";
