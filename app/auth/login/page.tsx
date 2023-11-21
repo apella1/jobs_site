@@ -71,7 +71,7 @@ export default function Login() {
           </Button>
           <Stack direction="row" spacing={1} alignItems="center">
             <Typography variant="h6">Don't have an account?</Typography>
-            <Link href="/auth/signup" className="text-blue-500">
+            <Link href="/auth/sign-up" className="text-blue-500">
               Sign Up
             </Link>
           </Stack>
