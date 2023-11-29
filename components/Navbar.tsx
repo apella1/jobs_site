@@ -41,8 +41,8 @@ export default function Navbar() {
   const handleShowLinkOptions = () => setShowLinkOptions(!showLinkOptions);
 
   return (
-    <AppBar position="fixed" className="text-black h-4 mb-4">
-      <Box component="section" className="flex justify-between p-4 bg-white">
+    <AppBar position="fixed" className="h-auto mb-4">
+      <Box component="section" className="flex justify-between p-4">
         <Box className="flex items-center space-x-8">
           <Typography variant="h6" component="h2">
             <Link href="/">LVPP</Link>

@@ -11,7 +11,7 @@ import {
 
 export default function CandidateSignUp() {
   return (
-    <Stack className="mt-4 min-h-screen px-32" spacing={4}>
+    <Stack className="mt-12 min-h-screen px-32" spacing={4}>
       <Typography variant="h3" className="self-center">
         Create a Candidate Account
       </Typography>

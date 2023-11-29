@@ -27,7 +27,7 @@ export default function Login() {
     toast.error("Not implemented yet");
   };
   return (
-    <Stack className="mt-4 h-screen pb-8">
+    <Stack className="mt-12 h-screen pb-8">
       <Stack direction="row" className="mt-4">
         <Stack className="basis-1/2 p-8" spacing={4}>
           <Typography variant="h5" component="h2">
