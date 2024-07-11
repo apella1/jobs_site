@@ -1,4 +1,5 @@
 "use client";
+
 import { store } from "@/redux/store";
 import theme from "@/styles/theme";
 import { ThemeProvider } from "@mui/material";

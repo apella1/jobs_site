@@ -7,7 +7,7 @@ import { Footer, Navbar } from "@/components";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Placement Platform",
+  title: "Job Market",
   description: "The Top Job Placement Platform in Africa",
 };
 
