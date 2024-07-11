@@ -1,17 +1,16 @@
-import { Box, Divider, Stack, Typography } from "@mui/material";
+import { Divider, Stack } from "@mui/material";
 import Link from "next/link";
-import {
-  SiFacebook,
-  SiInstagram,
-  SiLinkedin,
-  SiTwitter,
-  SiWhatsapp,
-} from "react-icons/si";
+import { SiFacebook, SiLinkedin, SiTwitter } from "react-icons/si";
 
-type FooterItem = {
+interface FooterItem {
   title: string;
   link: string;
-};
+}
+
+interface Site {
+  link: string;
+  icon: JSX.Element;
+}
 
 const footerItems: FooterItem[] = [
   { title: "About", link: "/about" },
@@ -22,14 +21,25 @@ const footerItems: FooterItem[] = [
   { title: "Skills Assessment", link: "/skills-assessment" },
 ];
 
+const socialMediaSites: Site[] = [
+  {
+    link: "facebook",
+    icon: <SiFacebook />,
+  },
+  {
+    link: "twitter",
+    icon: <SiTwitter />,
+  },
+  {
+    link: "linkedin",
+    icon: <SiLinkedin />,
+  },
+];
+
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <Box
-      component="section"
-      sx={{ p: 2 }}
-      className="py-8 px-32 flex flex-col space-y-6 mt-4"
-    >
+    <footer className="mt-4 flex flex-col space-y-6 px-32 py-8">
       <Stack
         direction="row"
         spacing={4}
@@ -41,27 +51,15 @@ export default function Footer() {
           </Link>
         ))}
       </Stack>
-      <Stack direction="row" spacing={4} className="text-xl">
-        <Link href="/">
-          <SiFacebook />
-        </Link>
-        <Link href="/">
-          <SiTwitter />
-        </Link>
-        <Link href="/">
-          <SiLinkedin />
-        </Link>
-        <Link href="/">
-          <SiInstagram />
-        </Link>
-        <Link href="/">
-          <SiWhatsapp />
-        </Link>
-      </Stack>
-      <Divider component="hr" />
-      <Typography variant="h6" className="self-center">
-        &copy; {year} LVPP
-      </Typography>
-    </Box>
+      <section className="flex items-center space-x-4 text-xl">
+        {socialMediaSites.map((site) => (
+          <Link href={site.link} key={site.link}>
+            {site.icon}
+          </Link>
+        ))}
+      </section>
+      <hr />
+      <p className="self-center">&copy; {year} Job Market</p>
+    </footer>
   );
 }

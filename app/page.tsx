@@ -1,12 +1,10 @@
-import { ExperienceFilter, ExploreJobs, HomeHeader } from "@/components";
-import { Box } from "@mui/material";
+import { ExperienceFilter, HomeHeader } from "@/components";
 
 export default function Home() {
   return (
-    <Box component="section" className="">
+    <main>
       <HomeHeader />
       <ExperienceFilter />
-      <ExploreJobs />
-    </Box>
+    </main>
   );
 }
