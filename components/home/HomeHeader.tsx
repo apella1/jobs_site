@@ -7,6 +7,7 @@ export default function HomeHeader() {
         <h1>Awaits</h1>
       </div>
       <section className="grid place-items-center">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={headerImg} alt="Header" className="w-[500px]" />
       </section>
     </header>

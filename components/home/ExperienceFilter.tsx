@@ -1,7 +1,6 @@
 import { ExperienceLevel } from "@/types/types";
-import { Box, Button, Grid, Stack, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import Link from "next/link";
-import { FcNext, FcPrevious } from "react-icons/fc";
 import { GrLinkNext } from "react-icons/gr";
 
 const experienceLevels: ExperienceLevel[] = [
@@ -19,51 +18,33 @@ const experienceLevels: ExperienceLevel[] = [
 
 export default function ExperienceFilter() {
   return (
-    <Stack className="py-8 px-32">
-      <Typography variant="h4" component="h3" className="self-center">
-        Find the right job vacancies in Kenya
-      </Typography>
-      <Box className="flex flex-col space-y-4">
-        <Typography variant="h4">Experience-based Filtering</Typography>
-        <Stack direction="row" justifyContent="space-between">
-          <Typography variant="h6">
-            Find jobs that suit your experience level
-          </Typography>
-          <Box className="flex items-center space-x-3">
-            <Typography variant="h6">View More Experience Levels</Typography>
-            <FcPrevious className="cursor-pointer" />
-            <FcNext className="cursor-pointer" />
-          </Box>
-        </Stack>
-        <Box component="section" className="grid grid-cols-4 gap-4">
+    <section className="flex flex-col space-y-6 px-32 py-8">
+      <h1 className="title self-center">
+        Find the right job vacancies for you
+      </h1>
+      <div className="flex flex-col space-y-6">
+        <h2 className="sub-title self-center">Experience-based Filtering</h2>
+        <div className="grid grid-cols-4 gap-4">
           {experienceLevels.map((experienceLevel, index) => (
-            <Box
+            <div
               key={index}
-              className="flex flex-col space-y-4 border border-gray-400 p-4 rounded-[8px]"
+              className="flex flex-col space-y-4 rounded-[8px] border border-gray-400 p-4"
             >
-              <Typography variant="h6" className="self-center">
-                {experienceLevel.title}
-              </Typography>
-              <Typography
-                variant="h6"
-                className="self-center text-gray-300 text-[14px]"
-              >
+              <h3 className="self-center">{experienceLevel.title}</h3>
+              <p className="self-center text-sm text-gray-600">
                 {experienceLevel.jobs} Jobs
-              </Typography>
+              </p>
               <Link
                 href={experienceLevel.link}
-                className="flex items-center space-x-2 text-blue-400 self-center font-medium"
+                className="flex items-center space-x-2 self-center font-medium text-blue"
               >
                 <Typography>Explore jobs</Typography>
                 <GrLinkNext />
               </Link>
-            </Box>
+            </div>
           ))}
-        </Box>
-        <Button variant="contained" className="self-center">
-          Explore All Jobs
-        </Button>
-      </Box>
-    </Stack>
+        </div>
+      </div>
+    </section>
   );
 }

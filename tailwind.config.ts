@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         purple: "#6013AB",
+        blue: "#091bb8",
       },
     },
   },
