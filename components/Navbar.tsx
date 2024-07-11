@@ -47,6 +47,7 @@ export default function Navbar() {
           </Link>
         </div>
       </section>
+      <hr />
     </nav>
   );
 }
