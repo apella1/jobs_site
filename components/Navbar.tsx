@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PiSignIn } from "react-icons/pi";
 
 interface NavLink {
   href: string;
@@ -24,8 +25,8 @@ const navLinks: NavLink[] = [
 
 export default function Navbar() {
   return (
-    <nav className="h-auto mb-4">
-      <section className="flex justify-between p-4">
+    <nav className="">
+      <section className="flex items-center justify-between p-4">
         <h1>
           <Link href="/">Job Market</Link>
         </h1>
@@ -36,9 +37,14 @@ export default function Navbar() {
             </div>
           ))}
         </div>
-        <div className="space-x-4">
-          <Link href="/auth/login">Login</Link>
-          <Link href="/auth/sign-up">Sign Up</Link>
+        <div className="flex items-center space-x-4">
+          <Link
+            href="/auth/login"
+            className="flex items-center space-x-3 rounded-lg bg-black px-4 py-2.5 text-white"
+          >
+            <PiSignIn className="text-xl font-bold" />
+            <p>Sign In</p>
+          </Link>
         </div>
       </section>
     </nav>
